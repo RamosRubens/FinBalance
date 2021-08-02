@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18092"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Wallet-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Wallet" id="Y6W-OH-hqX" customClass="WalletViewController" customModule="FinBalance" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carteira" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRW-od-pXh">
+                                <rect key="frame" x="0.0" y="76" width="414" height="33"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s4h-qD-6SY">
+                                <rect key="frame" x="64" y="132" width="286" height="100"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6Kq-Jp-hKZ">
+                                        <rect key="frame" x="16" y="16" width="146" height="60.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total da carteira" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tO2-AB-zh4">
+                                                <rect key="frame" x="0.0" y="0.0" width="146" height="27.5"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 12.000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Li5-4A-gMJ">
+                                                <rect key="frame" x="0.0" y="27.5" width="146" height="33"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="24"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYb-Tq-cGt">
+                                        <rect key="frame" x="248" y="39" width="22" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="22" id="08m-He-pRg"/>
+                                            <constraint firstAttribute="height" constant="22" id="wkt-Cj-VDM"/>
+                                        </constraints>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="eye">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="hideTotalTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="3T5-T8-Yy0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="primaryColor"/>
+                                <constraints>
+                                    <constraint firstItem="kYb-Tq-cGt" firstAttribute="centerY" secondItem="s4h-qD-6SY" secondAttribute="centerY" id="0U3-m0-rfy"/>
+                                    <constraint firstAttribute="height" constant="100" id="GvE-c4-Wgx"/>
+                                    <constraint firstItem="6Kq-Jp-hKZ" firstAttribute="leading" secondItem="s4h-qD-6SY" secondAttribute="leading" constant="16" id="YGg-2j-Jyn"/>
+                                    <constraint firstItem="6Kq-Jp-hKZ" firstAttribute="top" secondItem="s4h-qD-6SY" secondAttribute="top" constant="16" id="mKp-na-W7v"/>
+                                    <constraint firstAttribute="trailing" secondItem="kYb-Tq-cGt" secondAttribute="trailing" constant="16" id="zx7-q1-mBN"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ativos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v49-mg-LDm">
+                                <rect key="frame" x="16" y="248" width="382" height="44"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="n3W-U7-J1s">
+                                <rect key="frame" x="0.0" y="300" width="414" height="513"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ativosWalletCell" rowHeight="94" id="ACF-Ij-UWf" customClass="AssetsWalletTableViewCell" customModule="FinBalance" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="94"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ACF-Ij-UWf" id="dO8-r3-25W">
+                                            <rect key="frame" x="0.0" y="0.0" width="384.5" height="94"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="mGM-1O-Trd">
+                                                    <rect key="frame" x="8" y="8" width="368.5" height="78"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TAEE3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2jj-v0-dtz">
+                                                            <rect key="frame" x="0.0" y="0.0" width="368.5" height="32.5"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 6000,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyD-ZA-GI0">
+                                                            <rect key="frame" x="0.0" y="32.5" width="368.5" height="45.5"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="24"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="mGM-1O-Trd" firstAttribute="leading" secondItem="dO8-r3-25W" secondAttribute="leading" constant="8" id="04B-7g-543"/>
+                                                <constraint firstAttribute="bottom" secondItem="mGM-1O-Trd" secondAttribute="bottom" constant="8" id="dLy-HH-yPj"/>
+                                                <constraint firstAttribute="trailing" secondItem="mGM-1O-Trd" secondAttribute="trailing" constant="8" id="kFd-3p-pz1"/>
+                                                <constraint firstItem="mGM-1O-Trd" firstAttribute="top" secondItem="dO8-r3-25W" secondAttribute="top" constant="8" id="ulL-lT-jRa"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="assetTitle" destination="2jj-v0-dtz" id="gB9-FY-eut"/>
+                                            <outlet property="assetValue" destination="oyD-ZA-GI0" id="67V-7P-307"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pRW-od-pXh" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="32" id="8Sy-Bh-GP1"/>
+                            <constraint firstItem="v49-mg-LDm" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="Jhd-J0-yDK"/>
+                            <constraint firstItem="v49-mg-LDm" firstAttribute="top" secondItem="s4h-qD-6SY" secondAttribute="bottom" constant="16" id="K44-To-KHX"/>
+                            <constraint firstItem="s4h-qD-6SY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="64" id="Mo5-pn-3Rd"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="pRW-od-pXh" secondAttribute="trailing" id="O4j-5a-qZS"/>
+                            <constraint firstItem="pRW-od-pXh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="bcN-Kd-kGK"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="v49-mg-LDm" secondAttribute="trailing" constant="16" id="eob-xr-Dih"/>
+                            <constraint firstItem="s4h-qD-6SY" firstAttribute="centerX" secondItem="pRW-od-pXh" secondAttribute="centerX" id="jQP-d6-lGU"/>
+                            <constraint firstItem="s4h-qD-6SY" firstAttribute="top" secondItem="pRW-od-pXh" secondAttribute="bottom" constant="23" id="mhf-Kz-4Ti"/>
+                            <constraint firstItem="pRW-od-pXh" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="myO-6e-cFU"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Wallet" image="icWallet" id="jxe-Aw-Ivt"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="assetsTableView" destination="n3W-U7-J1s" id="fgF-Yn-vOd"/>
+                        <outlet property="hideTotal" destination="kYb-Tq-cGt" id="GGs-3V-zS3"/>
+                        <outlet property="totalWalletLabel" destination="Li5-4A-gMJ" id="ELB-Wj-Y36"/>
+                        <outlet property="walletTotalView" destination="s4h-qD-6SY" id="gfz-IS-hAF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="105.80357142857143"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="eye" width="21" height="21"/>
+        <image name="icWallet" width="21" height="21"/>
+        <namedColor name="primaryColor">
+            <color red="0.14901960784313725" green="0.75686274509803919" blue="0.396078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
