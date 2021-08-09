@@ -28,13 +28,8 @@ class HomeViewController: UIViewController, UIAnimatable {
     override func viewDidLoad() {
         super.viewDidLoad()
         showLoadingAnimation()
-        setupNavigationBar()
         setupViews()
         setupTableViews()
-    }
-    
-    private func setupNavigationBar(){
-        self.title = K.Titles.homeTitle
     }
     
     private func setupViews(){
@@ -107,6 +102,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: K.Id.ativosCellId , for: indexPath) as! HomeAssetsTableViewCell
         cell.configure(with: assets[indexPath.item])
+     
         return cell
     }
 }

@@ -16,6 +16,8 @@ struct K {
         static let showLoginSignUp = "showLoginSignUp"
         static let showCalculator = "showCalculator"
         static let showDate = "showDateSelection"
+        static let showInvest = "showInvest"
+        static let showInvestDetail = "showInvestDetail"
     }
     
     struct StorybordID {
@@ -34,6 +36,7 @@ struct K {
         static let ativosCellId = "ativosCell"
         static let ativosWalletCellId = "ativosWalletCell"
         static let balanceCellId = "balanceCell"
+        static let investCellId = "investCellId"
     }
     
     struct Titles {

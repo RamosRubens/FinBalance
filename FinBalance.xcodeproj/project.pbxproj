@@ -72,6 +72,9 @@
 		257CE01F26B7461800B386BB /* TargetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257CE01E26B7461800B386BB /* TargetRequest.swift */; };
 		257CE02126B7AB9C00B386BB /* ResponseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257CE02026B7AB9C00B386BB /* ResponseResult.swift */; };
 		257CE02626B7FE0D00B386BB /* Aport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257CE02526B7FE0D00B386BB /* Aport.swift */; };
+		25C4F5C826C1360E00E0ADFC /* InvestimentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C4F5C726C1360E00E0ADFC /* InvestimentViewController.swift */; };
+		25C4F5CA26C140FD00E0ADFC /* InvestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C4F5C926C140FD00E0ADFC /* InvestTableViewCell.swift */; };
+		25C4F5CC26C14FCD00E0ADFC /* InvestimentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C4F5CB26C14FCD00E0ADFC /* InvestimentDetailViewController.swift */; };
 		6348C721E590074AB7E78C34 /* Pods_FinBalance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71185F7AF239A38FFE4917F6 /* Pods_FinBalance.framework */; };
 /* End PBXBuildFile section */
 
@@ -144,6 +147,9 @@
 		257CE01E26B7461800B386BB /* TargetRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetRequest.swift; sourceTree = "<group>"; };
 		257CE02026B7AB9C00B386BB /* ResponseResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseResult.swift; sourceTree = "<group>"; };
 		257CE02526B7FE0D00B386BB /* Aport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aport.swift; sourceTree = "<group>"; };
+		25C4F5C726C1360E00E0ADFC /* InvestimentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestimentViewController.swift; sourceTree = "<group>"; };
+		25C4F5C926C140FD00E0ADFC /* InvestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestTableViewCell.swift; sourceTree = "<group>"; };
+		25C4F5CB26C14FCD00E0ADFC /* InvestimentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestimentDetailViewController.swift; sourceTree = "<group>"; };
 		71185F7AF239A38FFE4917F6 /* Pods_FinBalance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinBalance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78CB3F1CA98BCEE459F1EFC7 /* Pods-FinBalance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinBalance.debug.xcconfig"; path = "Target Support Files/Pods-FinBalance/Pods-FinBalance.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -221,6 +227,8 @@
 				257CDFFD26B48D0100B386BB /* TargetViewController.swift */,
 				257CE00C26B5608200B386BB /* BalanceViewController.swift */,
 				257CE01426B5CA7700B386BB /* WalletViewController.swift */,
+				25C4F5C726C1360E00E0ADFC /* InvestimentViewController.swift */,
+				25C4F5CB26C14FCD00E0ADFC /* InvestimentDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -264,6 +272,7 @@
 				257CE00A26B53A6F00B386BB /* HomeAssetsTableViewCell.swift */,
 				257CE00E26B5640A00B386BB /* BalanceTableViewCell.swift */,
 				257CE01626B5DAB800B386BB /* AssetsWalletTableViewCell.swift */,
+				25C4F5C926C140FD00E0ADFC /* InvestTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -479,8 +488,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25C4F5CC26C14FCD00E0ADFC /* InvestimentDetailViewController.swift in Sources */,
 				250243C926B124A90026170F /* UICustomButton.swift in Sources */,
 				256D524926B33805003487E3 /* UIColor+Extensions.swift in Sources */,
+				25C4F5CA26C140FD00E0ADFC /* InvestTableViewCell.swift in Sources */,
 				256D524526B33743003487E3 /* DCAService.swift in Sources */,
 				250243B926B089930026170F /* MonthInfo.swift in Sources */,
 				257CE01926B5DC3C00B386BB /* AssetsInvested.swift in Sources */,
@@ -510,6 +521,7 @@
 				250243A426AF51CE0026170F /* APIService.swift in Sources */,
 				256D524726B33792003487E3 /* CalculatorPresenter.swift in Sources */,
 				2502434A26A9690C0026170F /* LoadingViewController.swift in Sources */,
+				25C4F5C826C1360E00E0ADFC /* InvestimentViewController.swift in Sources */,
 				257CDFFE26B48D0100B386BB /* TargetViewController.swift in Sources */,
 				2502434E26A99A520026170F /* Helper.swift in Sources */,
 				250243A826AF54090026170F /* SearchResult.swift in Sources */,
